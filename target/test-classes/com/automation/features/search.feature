@@ -6,13 +6,13 @@ Feature: Search Functionality
   Background:
     Given I am on the homepage
 
-  @smoke @search
+  @LoginBeforeAll @smoke @search
   Scenario: Search for a valid product
     When I enter "Tom" in the search box
     And I click on the search button
     Then I should see search results related to "Tomato - 1 Kg"
 
-  @regression @search
+  @LoginBeforeAll @regression @search
   Scenario: Search for an invalid product
     When I enter "XRT234" in the search box
     And I click on the search button

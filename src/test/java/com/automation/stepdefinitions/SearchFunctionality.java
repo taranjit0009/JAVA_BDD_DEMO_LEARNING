@@ -1,24 +1,26 @@
 package com.automation.stepdefinitions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-
 import com.automation.pages.LandingPage;
 import com.automation.testcontext.TestContextSetup;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchFunctionality {
 
-	WebDriver driver;
-	TestContextSetup context;
-	LandingPage landingPage;
+	// Local references for context, and page object
+	protected TestContextSetup context;
+	protected LandingPage landingPage;
 
 	// Constructor Injection
+	/**
+     * Constructor Injection Technique:
+     * --------------------------------
+     * - Cucumber automatically creates an instance of this class when running scenarios.
+     * - By declaring a constructor that accepts TestContextSetup, Cucumber injects the same
+     *   context object here that was also injected into Hooks.
+     * - This ensures all step definitions share the same WebDriver and page objects for a scenario.
+     */
 	public SearchFunctionality(TestContextSetup context) {
 		this.context = context;
 		this.landingPage = context.pageObjectManager.getLandingPage();
@@ -31,7 +33,7 @@ public class SearchFunctionality {
 
 	@When("I enter {string} in the search box")
 	public void i_enter_in_the_search_box(String keyword) {
-		System.out.println("*************************************" + keyword + "++++++++++++++++++++++++++++++++");
+		System.out.println("*************************************" + keyword + "************************************");
 		landingPage.enterSearchItem(keyword);
 	}
 
