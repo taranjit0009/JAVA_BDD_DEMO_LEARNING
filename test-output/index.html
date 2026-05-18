@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Taranjit Singh\AppData\Local\Temp\testng-eclipse--101093150\testng-customsuite.xml</span>
+                    <span>C:\Users\Taranjit Singh\AppData\Local\Temp\testng-eclipse--591749286\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.testrunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a valid product&quot;, &quot;Search Functionality&quot;)">runScenario("Search for a valid product", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.testrunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for an invalid product&quot;, &quot;Search Functionality&quot;)">runScenario("Search for an invalid product", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,16 +120,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.automation.testrunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for a valid product&quot;, &quot;Search Functionality&quot;)">runScenario("Search for a valid product", "Search Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.automation.testrunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for an invalid product&quot;, &quot;Search Functionality&quot;)">runScenario("Search for an invalid product", "Search Functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.automation.testrunner.testRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid cred&quot;, &quot;Login Functionality&quot;)">runScenario("Login with valid cred", "Login Functionality")</a> <!-- method navigator-link -->
@@ -128,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.automation.testrunner.testRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,6 +149,15 @@
                   </a> <!-- runScenario("Search for a valid product", "Search Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search for a valid product","Search Functionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at com.automation.stepdefinitions.SearchFunctionality.i_should_see_search_results_related_to(SearchFunctionality.java:49)
+	at ✽.I should see search results related to &quot;Tomato - 1 Kg&quot;(file:///C:/Users/Taranjit%20Singh/OneDrive/Automation%20Learning/AutomationSeleniumFramework/com.automation.bdd/src/test/resources/com/automation/features/search.feature:13)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -150,10 +168,27 @@
                   </a> <!-- runScenario("Search for an invalid product", "Search Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Search for an invalid product","Search Functionality")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at com.automation.stepdefinitions.SearchFunctionality.i_should_see_search_results_related_to(SearchFunctionality.java:49)
+	at ✽.I should see search results related to &quot;Sorry, no products matched your search!&quot;(file:///C:/Users/Taranjit%20Singh/OneDrive/Automation%20Learning/AutomationSeleniumFramework/com.automation.bdd/src/test/resources/com/automation/features/search.feature:19)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.testrunner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Login with valid cred&quot;, &quot;Login Functionality&quot;)">
@@ -169,7 +204,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Taranjit Singh\AppData\Local\Temp\testng-eclipse--101093150\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Taranjit Singh\AppData\Local\Temp\testng-eclipse--591749286\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,20 +265,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.automation.testrunner.testRunner')
-data.setCell(0, 3, 19064);
+data.setCell(0, 3, 28019);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.automation.testrunner.testRunner')
-data.setCell(1, 3, 9102);
+data.setCell(1, 3, 9442);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.automation.testrunner.testRunner')
-data.setCell(2, 3, 3532);
+data.setCell(2, 3, 7485);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -271,24 +306,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.testrunner.testRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@100c8b75)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@705202d1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Search for a valid product", "Search Functionality")</span>
-                <span class="method-start">670 ms</span>
+                <span class="method-start">729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Search for an invalid product", "Search Functionality")</span>
-                <span class="method-start">670 ms</span>
+                <span class="method-start">729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid cred", "Login Functionality")</span>
-                <span class="method-start">670 ms</span>
+                <span class="method-start">729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19737 ms</span>
+                <span class="method-start">28751 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

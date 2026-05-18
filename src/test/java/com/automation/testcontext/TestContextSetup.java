@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import com.automation.pageobjectmanager.PageObjectManager;
 import com.automation.utilities.ConfigReader;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestContextSetup {
 	public WebDriver driver;
 	public ConfigReader configReader;

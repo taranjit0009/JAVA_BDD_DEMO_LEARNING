@@ -1,5 +1,7 @@
 package com.automation.stepdefinitions;
 
+import static org.testng.Assert.assertFalse;
+
 import com.automation.pages.LandingPage;
 import com.automation.testcontext.TestContextSetup;
 import io.cucumber.java.en.Given;
@@ -44,6 +46,7 @@ public class SearchFunctionality {
 	@Then("I should see search results related to {string}")
 	public void i_should_see_search_results_related_to(String expectedMessage) throws InterruptedException {
 		landingPage.validateSerchedResult(expectedMessage);
+		assertFalse(true);
 	}
 
 }

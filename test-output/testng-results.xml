@@ -1,59 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-19T00:45:04 IST" name="Default suite" finished-at="2026-05-19T00:45:27 IST" duration-ms="22244">
+  <suite started-at="2026-05-19T02:22:12 IST" name="Default suite" finished-at="2026-05-19T02:22:41 IST" duration-ms="29225">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-05-19T00:45:04 IST" name="Default test" finished-at="2026-05-19T00:45:27 IST" duration-ms="22244">
+    <test started-at="2026-05-19T02:22:12 IST" name="Default test" finished-at="2026-05-19T02:22:41 IST" duration-ms="29225">
       <class name="com.automation.testrunner.testRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" started-at="2026-05-19T00:45:04 IST" name="setUpClass" finished-at="2026-05-19T00:45:05 IST" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" started-at="2026-05-19T02:22:12 IST" name="setUpClass" finished-at="2026-05-19T02:22:13 IST" duration-ms="706" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@100c8b75]]>
+                <![CDATA[org.testng.TestRunner@705202d1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" started-at="2026-05-19T00:45:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T00:45:14 IST" duration-ms="9102" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a valid product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" started-at="2026-05-19T00:45:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T00:45:24 IST" duration-ms="19064" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for an invalid product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" started-at="2026-05-19T00:45:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T00:45:09 IST" duration-ms="3532" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" started-at="2026-05-19T02:22:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T02:22:20 IST" duration-ms="7485" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +37,69 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.testrunner.testRunner@63070bab]" started-at="2026-05-19T00:45:24 IST" name="tearDownClass" finished-at="2026-05-19T00:45:27 IST" duration-ms="2472" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" started-at="2026-05-19T02:22:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T02:22:22 IST" duration-ms="9442" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for a valid product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at com.automation.stepdefinitions.SearchFunctionality.i_should_see_search_results_related_to(SearchFunctionality.java:49)
+at ✽.I should see search results related to "Tomato - 1 Kg"(file:///C:/Users/Taranjit%20Singh/OneDrive/Automation%20Learning/AutomationSeleniumFramework/com.automation.bdd/src/test/resources/com/automation/features/search.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" started-at="2026-05-19T02:22:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-19T02:22:41 IST" duration-ms="28019" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for an invalid product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at com.automation.stepdefinitions.SearchFunctionality.i_should_see_search_results_related_to(SearchFunctionality.java:49)
+at ✽.I should see search results related to "Sorry, no products matched your search!"(file:///C:/Users/Taranjit%20Singh/OneDrive/Automation%20Learning/AutomationSeleniumFramework/com.automation.bdd/src/test/resources/com/automation/features/search.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.automation.testrunner.testRunner@1757cd72]" started-at="2026-05-19T02:22:41 IST" name="tearDownClass" finished-at="2026-05-19T02:22:41 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
